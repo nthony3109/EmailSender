@@ -1,9 +1,8 @@
-package com.Mail.setup;
+package com.Mail.setup.Service;
 
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMailMessage;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
@@ -35,7 +34,7 @@ public class EmailService {
                     If this action was not performed by you, please ignore this email.
                 </p>
 
-                <p>The code to verify your email is below:</p>
+                <p>Use the below code to verify your email:</p>
 
                 <h2 style="
                     color: purple;
