@@ -1,5 +1,7 @@
-package com.Mail.setup;
+package com.Mail.setup.Controller;
 
+import com.Mail.setup.DTOs.EmailReq;
+import com.Mail.setup.Service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/email")
 public class Mailcontroller {
     @Autowired
-    private  EmailService emailService;
+    private EmailService emailService;
 
 
     @PostMapping("/verify")
